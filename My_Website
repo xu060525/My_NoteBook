@@ -1,0 +1,59 @@
+# My Website Project
+
+这个文件是我用 Django 开发的个人网站中的记录。
+
+## Day 0
+
+Day 0 主要进行前期的准备以及路线规划。
+
+### 技术栈规划
+
+- 语言：Python 3
+- 后端框架：Django
+- 数据库；SQLite -> PostgreSQL
+- 前端：HTML5 + Bootstrap 5 + Django Template (模板语言)
+
+### 关于 Django 的基础架构理解
+
+1. User 点击“下载” 
+2. URL 路由识别请求并使用对应的处理函数
+3. 视图去数据库查找并读取文件
+4. 模型定义数据
+5. 模板 (HMI) ，后端把数填进 HTML 发回给用户
+
+### 环境准备
+
+#### 创建虚拟环境
+
+``` Bash
+# 创建虚拟环境 (名字是 venv)
+python -m venv venv
+
+# 激活虚拟环境
+# Windows
+.\venv\Scripts\activate
+# Mac/Linux
+source venv/bin/activate
+```
+
+#### 安装 Django
+
+``` Bash
+pip install django
+```
+
+#### 构思数据库
+
+我们需要什么字段？
+> Blog
+> - 标题 (Title) - 字符串
+> - 正文 (Content) - 长文本
+> - 发布日期 (Date) - 时间
+> - 分类 (Category) - 字符串
+
+> Project
+> - 项目名称
+> - 项目描述
+> - 文件附件
+> - GitHub 链接
+
